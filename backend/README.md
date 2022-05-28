@@ -32,10 +32,10 @@ Options:
 
 Networks:
   core                               Conflux Core Space network selection
-  espace			      Conflux eSpace network selection
+  espace                             Conflux eSpace network selection
 
 Commands:
-  send [address]
+  send [address]                     Send 0.0025 CFX to given ADDRESS 
   help [command]                     display help for command
 ```
 
