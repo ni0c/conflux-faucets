@@ -1,0 +1,889 @@
+body._bs2 {
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.left-icon {
+  width: 50px;
+}
+
+.footer-item {
+  display: inline-block;
+  width: 160px;
+}
+
+
+._bs2 #videoEl {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+._bs2 #button-conn {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+._bs2 #header-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+._bs2 #top-bar-container {
+  background-color: rgba(0,0,0,0.9);
+  overflow: hidden;
+  max-width: 100%;
+}
+
+._bs2 #top-bar-wrapper {
+  overflow: hidden;
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+._bs2 #top-bar-wrapper A {
+  text-decoration: none;
+}
+
+
+._bs2 #webomatic {
+ 
+  color: rgba(250, 250, 250, 0.8);
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  font-family: Comfortaa;
+
+  position: relative;
+}
+
+._bs2 #webomatic #w_webo {
+  background: rgba(250, 250, 250, 0.8);
+  color:rgba(6, 0, 61, 0.95);
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 6px;
+}
+
+._bs2 #webomatic:hover 
+{
+  color: rgba(250, 250, 250, 0.9);
+}
+
+._bs2 #webomatic:hover #w_webo 
+{
+  background: rgba(250, 250, 250, 0.9);
+  color:rgba(20, 20, 20, 0.95);
+}
+
+._bs2 #conflux-logo {
+  height: 6rem;
+}
+
+._bs2 .faucet-button-text #fluent-logo {
+  filter: brightness(90%);
+  transition: all 0.15s ease-in-out;
+}
+
+._bs2 .faucet-button-text #mm-logo {
+  filter: brightness(92%);
+  transition: all 0.15s ease-in-out;
+}
+
+._bs2 .faucet-button-text:hover #mm-logo,
+._bs2 .faucet-button-text:active #mm-logo {
+  filter: brightness(100%);
+}
+
+._bs2 .faucet-button-text:hover #fluent-logo,
+._bs2 .faucet-button-text:active #fluent-logo {
+  filter: brightness(95%);
+}
+
+
+._bs2 .faucet-button-text:hover #fluent-logo,
+._bs2 .faucet-button-text:active #fluent-logo {
+  transform: rotate(7deg) translate(1px, -3px) scale(1.0);
+}
+
+._bs2 .faucet-button-text:hover #mm-logo,
+._bs2 .faucet-button-text:active #mm-logo {
+  transform: rotate(3deg) translate(1px, -3px) scale(1.0);
+}
+
+._bs2 .faucet-button-text:active #fluent-logo,
+._bs2 .faucet-button-text:active #mm-logo {
+  transition: all 0.02s ease-in-out;
+}
+
+._bs2 #fluent-logo {
+  height: 3.75rem;
+  margin: 0.7rem;
+}
+
+._bs2 #mm-logo {
+  height: 5rem;
+}
+
+._bs2 #header-container h1 {
+  font-size: 4rem;
+  margin-bottom: 0rem;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.83), 2px 2px 12px rgba(0,0,0,0.5), 0px 0px 5px #000000, 0px 0px 5px #000000;
+}
+
+._bs2 #header-container h3 {
+  margin-bottom: 4rem;
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.83), 2px 2px 12px rgba(0,0,0,0.5), 0px 0px 5px #000000, 0px 0px 5px #000000;
+}
+
+._bs2 #buttons-container {
+  width: 650px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+._bs2 .faucet-button {
+  margin-bottom: 1rem;
+  text-align: center;
+  display: block;
+  float: left;
+
+
+}
+
+._bs2 .faucet-button-text,
+._bs2 #info-button-text,
+._bs2 .info-faq-heading,
+._bs2 #top-bar-wrapper A {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  cursor: pointer;
+}
+
+
+._bs2 .faucet-button-container {
+  width: 315px;
+  height: 280px;
+  margin-bottom: 5px;
+  max-width: 100%;
+}
+
+._bs2 .faucet-button-heading {
+  color: #fff;
+  font-family: Comfortaa;
+  font-size: 1.25rem;
+}
+
+/* background: #0FAF00; */
+/* background-color: #0c8f00; */ 
+
+._bs2 .faucet-button-text {
+  /* background: #599d35; */
+  background: #60a839;
+  background: -moz-linear-gradient(0deg, #60a839 30%, #559632 100%);
+  background: -webkit-linear-gradient(0deg, #60a839 30%, #559632 100%);
+  background: linear-gradient(0deg, #60a839 30%, #559632 100%);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 1.85rem;
+  
+  transition: all 0.15s ease-in-out;
+  font-family: Comfortaa;
+  box-shadow:
+    0px 5px 0px 0px #3e6d25, /* button thickness */
+    0px 0 40px rgba(255,255,255,.3) inset, /* inner glow */
+    2px 40px 0px rgba(255,255,255,.04) inset; /* sublte reflection */
+  
+}
+
+._bs2 .faucet-button-text:hover,
+._bs2 .faucet-button-text:active {
+  /* background: #519b2a; */
+  background: -moz-linear-gradient(0deg, #5daa33 30%, #52962d 100%);
+  background: -webkit-linear-gradient(0deg, #5daa33 30%, #52962d 100%);
+  background: linear-gradient(0deg, #5daa33 30%, #52962d 100%);
+
+  box-shadow:
+    0px 5px 0px 0px #3c8614, /* button thickness */
+    0px 0 50px 10px rgba(158, 255, 134, 0.5) inset, /* inner glow */
+    5px 37px 0px rgba(255,255,255,.1) inset; /* sublte reflection */
+  
+  color: #fff;
+  transition: all 0.15s ease-in-out;
+}
+
+
+._bs2 .faucet-button-text:active {
+  transition: all 0.02s ease-in-out;
+}
+/*
+  background: -moz-linear-gradient(180deg, #0FAF00 0%, #0a7700 59%);
+  background: -webkit-linear-gradient(180deg, #0FAF00 0%, #0a7700 59%);
+  background: linear-gradient(180deg, #0FAF00 0%, #0a7700 59%);
+*/
+
+/*
+  ._bs2 .faucet-button-text {
+    background: #0FAF00;
+    
+    color: #fff;
+    border-radius: 1rem;
+    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.85rem;
+    transition: all 0.15s ease-in-out;
+    font-family: Comfortaa;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.25) 0px 15px 25px 0px inset,
+    rgba(0, 0, 0, 0.25) 0px -36px 30px 0px inset, 
+    rgba(0, 0, 0, 0.18) 0px -79px 40px 0px inset;
+    
+  }
+
+  ._bs2 .faucet-button-text:hover,
+  ._bs2 .faucet-button-text:active {
+    background-color: #0c8f00;
+    
+    color: #fff;
+    transition: all 0.15s ease-in-out;
+  }
+*/
+
+
+._bs2 #fluent-button.faucet-button {
+  margin-right: 20px;
+}
+
+
+._bs2 #info-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(231, 231, 231);
+  background-color: rgba(0,0,0,0.75);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+._bs2 #info-container b {
+  color: rgb(155, 205, 255);
+}
+
+._bs2 #info-container h5 {
+  line-height: 150%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+._bs2 #info-container p {
+  margin-bottom: 1.5rem;
+}
+
+._bs2 #info-button {
+  width: 250px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+._bs2 #info-button-text {
+  padding: 1rem;
+  font-family: Comfortaa;
+  font-size: 1.6rem;
+  background-color: #1d49a8;
+  border-radius: 8px;
+}
+
+._bs2 #info-button-text:hover {
+  background-color: #0046dd;
+}
+
+
+._bs2 #footer-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+._bs2 #capt {
+  max-width: 100%;
+}
+
+._bs2 .popup {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.1s;
+}
+
+._bs2 .popup2 {
+  height: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  transition: 0.1s;
+
+}
+
+._bs2 .popup3 {
+  height: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 35%;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  transition: 0.1s;
+
+}
+
+._bs2 .popup4 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.1s;
+}
+
+._bs2 #popup2 {
+  z-index: 1050;
+}
+
+._bs2 #popup3 {
+  z-index: 1100;
+}
+
+._bs2 #popup4 {
+  z-index: 1025;
+}
+
+._bs2 #popup .popup-close-button,
+._bs2 #popup4 .popup-close-button {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration: none;
+  text-shadow: rgba(0,0,0,1) 1px 1px 4px, rgba(0,0,0,1) 1px 1px 10px;
+}
+
+._bs2 #popup2 .popup-close-button,
+._bs2 #popup3 .popup-close-button {
+  display: none;
+  float: right;
+  font-size: 30px;
+  text-decoration: none;
+  margin-top: -0.375rem;
+  text-shadow: rgba(0,0,0,1) 1px 1px 4px, rgba(0,0,0,1) 1px 1px 10px;
+}
+
+._bs2 #popup3 .popup-close-button {
+  text-shadow: rgba(255,255,255,1) 1px 1px 4px, rgba(255,255,255,1) 1px 1px 10px;
+  color: #000;
+}
+
+
+._bs2 #popup .popup-close-button {
+  z-index: 1040;
+}
+._bs2 #popup2 .popup-close-button {
+  z-index: 1090;
+}
+
+._bs2 #popup3 .popup-close-button {
+  z-index: 1140;
+}
+._bs2 #popup4 .popup-close-button {
+  z-index: 1049;
+}
+
+._bs2 #popup .popup-content {
+  position: relative;
+  top: 25%;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px; 
+  
+}
+
+._bs2 #popup2 .popup-content {
+  width: 550px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 0px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: #000;
+  background-color: rgba(0,0,0, 0.95);
+  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid rgb(180, 180, 180);
+}
+
+._bs2 #popup3 .popup-content {
+  width: 550px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 0px;
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: #fff;
+  background-color: rgba(255,255,255, 0.95);
+  color: rgb(48, 76, 134);
+  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 3px solid rgba(255,255,255,0.65);
+}
+
+._bs2 .popup2 .popup-error {
+  color: rgb(219, 214, 139);
+}
+
+._bs2 .popup2 .popup-notice {
+  color: rgb(187, 219, 157);
+}
+
+
+._bs2 #popup2 .popup-content-text {
+  padding: 1rem;
+}
+
+._bs2 #popup3 .popup-content-text {
+  padding: 1rem;
+}
+
+._bs2 #popup .popup-content-wide,
+._bs2 #popup4 .popup-content-wide {
+  position: relative;
+  top: 10px;
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 180px;
+}
+
+._bs2 #popup .sub-heading,
+._bs2 #popup2 .sub-heading {
+  font-size: 1.5rem;
+}
+
+._bs2 #popup .sub-icon-float,
+._bs2 #popup2 .sub-icon-float {
+  float: left;
+  height: 3rem;
+  font-size: 2.75rem;
+  padding-right: 0.5rem;
+
+}
+
+._bs2 #popup4 h2 {
+  color: rgb(75, 183, 255);
+  margin-bottom: 2rem;
+}
+
+._bs2 #popup4 h3,
+._bs2 #popup4 h4 {
+  color: yellow;
+  margin-bottom: 1.25rem;
+}
+
+._bs2 #popup4 h5,
+._bs2 #popup4 h6 {
+  color: rgb(247, 0, 255);
+}
+
+._bs2 .info-faqs u {
+  color: rgb(230, 227, 103);
+  font-weight: normal;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+._bs2 .info-faqs b {
+  color: limegreen;
+  font-weight: normal;
+}
+
+._bs2 .info-faq-container {
+  margin-bottom: 1rem;
+}
+
+._bs2 .info-faq-heading {
+  font-family: Comfortaa;
+  font-size: 1.25rem;
+  color:rgb(178, 223, 149);
+  margin-bottom: 0.5rem;
+}
+
+._bs2 .info-faq-text {
+  display: none;
+}
+
+._bs2 .info-links,
+._bs2 .info-videos {
+  margin-bottom: 1.5rem;
+}
+
+._bs2 .info-link,
+._bs2 .video-link {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+._bs2 .video-link A span,
+._bs2 .info-link A span{
+  display: inline-block;
+  color: #8ed5ff;
+  border: 1px solid #5f6b72;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+._bs2 .video-link A:hover span,
+._bs2 .info-link A:hover span {
+  color: #1dacff;
+  border: 1px solid #1dacff;
+  text-decoration: none;
+  background-color: #152342
+}
+
+._bs2 .info-hr {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+._bs2 .conflux-mini {
+  height: 0.85rem;
+  margin-right: 1.6rem;
+  opacity: 0.3;
+}
+
+
+@media only screen and (max-width: 840px) {
+
+
+  ._bs2 .icon-left {
+    font-size: 2.75rem;
+  }
+
+  ._bs2 #conflux-logo {
+    height: 4.5rem;
+  }
+
+  ._bs2 #header-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  ._bs2 #header-container p {
+    font-size: 1rem;
+  }
+
+  ._bs2 .conflux-mini {
+    margin-right: 0.9rem;
+  }
+
+  ._bs2 .info-hr {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 649px) {
+
+  ._bs2 .icon-left {
+    font-size: 2.75rem;
+  }
+
+  ._bs2 .info-right {
+    font-size: 0.8rem;
+  }
+
+  ._bs2 #conflux-logo {
+    height: 3rem;
+  }
+
+  ._bs2 #header-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ._bs2 #header-container h3 {
+    font-size: 1.75rem;
+  }
+
+  ._bs2 #buttons-container {
+    margin: 0 auto;
+    max-width: 420px;
+  }
+
+  ._bs2 .faucet-button-container {
+    width: 49vw;
+    max-width: 200px;
+    height: auto;
+    text-align: center;
+  }
+
+  ._bs2 .faucet-button-text {
+    padding: 1.5rem;
+    height: 11rem;
+    border-radius: 0.5rem;
+  }
+
+  ._bs2 #fluent-button.faucet-button {
+    margin-right: 2vw;
+  }
+
+  ._bs2 #fluent-button .faucet-button-text {
+    font-size: 1.35rem;
+  }
+  ._bs2 #fluent-button .faucet-button-heading {
+    font-size: 0.95rem;
+  }
+
+  ._bs2 #mm-button .faucet-button-text {
+    font-size: 1.35rem;
+  }
+  ._bs2 #mm-button .faucet-button-heading {
+    font-size: 0.95rem;
+  }
+
+  ._bs2 #fluent-logo {
+    height: 2rem;
+    margin: 0.5rem;
+  }
+
+  ._bs2 #mm-logo {
+    height: 3rem;
+  }
+
+  ._bs2 #popup .popup-close-button,
+  ._bs2 #popup4 .popup-close-button {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  ._bs2 .conflux-mini {
+    height: 0.75em;
+    margin-right: 0.3rem;
+   
+  }
+
+  ._bs2 .info-hr {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  ._bs2 #info-container {
+    margin-top: 0.5rem;
+
+  }
+
+  ._bs2 #header-container h3 {
+    margin-bottom: 2.5rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 440px) {
+
+  ._bs2 .icon-left {
+    font-size: 2.75rem;
+  }
+
+  ._bs2 .info-right {
+    font-size: 0.8rem;
+  }
+
+  ._bs2 #conflux-logo {
+    height: 3rem;
+  }
+
+  ._bs2 #header-container h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ._bs2 #header-container h3 {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+  }
+
+  ._bs2 #header-container {
+    margin-top: 1rem;
+  }
+
+  ._bs2 #webomatic {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  ._bs2 #webomatic #w_webo {
+    border-radius: 2.5px;
+    padding: 5px;
+  }  
+
+  ._bs2 #buttons-container {
+    margin: 0 auto;
+    max-width: 330px;
+  }
+
+
+
+  ._bs2 .faucet-button-container {
+    width: 48vw;
+    max-width: 160px;
+    text-align: center;
+  }
+
+  ._bs2 .faucet-button-text {
+    padding: 1.5rem;
+    height: 9.5rem;
+  }
+
+  ._bs2 #fluent-button.faucet-button {
+    margin-right: 10px;
+  }
+
+  ._bs2 #fluent-button .faucet-button-text {
+    font-size: 1rem;
+  }
+  ._bs2 #fluent-button .faucet-button-heading {
+    font-size: 0.7rem;
+  }
+
+  ._bs2 #mm-button .faucet-button-text {
+    font-size: 1rem;
+  }
+  ._bs2 #mm-button .faucet-button-heading {
+    font-size: 0.7rem;
+  }
+
+  ._bs2 #fluent-logo {
+    height: 2rem;
+    margin: 0.5rem;
+  }
+
+  ._bs2 #mm-logo {
+    height: 3rem;
+  }
+
+  ._bs2 #info-container {
+    padding: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  ._bs2 #info-container h5 {
+    font-size: 0.95rem;
+  }
+
+  ._bs2 #info-container p {
+    font-size: 0.8rem;
+  }
+  ._bs2 #info-button-text {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+  }
+
+  ._bs2 .info-hr {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  ._bs2 .conflux-mini {
+    height: 0.6rem;
+    margin-right: 0.1rem;
+    
+  }
+
+  ._bs2 #popup4 h2 {
+    font-size: 1.65rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  ._bs2 #popup4 h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  ._bs2 #popup4 h5 {
+    font-size: 1.15rem;
+  }
+
+  ._bs2 .info-faq-heading {
+    font-size: 1.05rem;
+  }
+
+  ._bs2 .info-faq-text {
+    font-size: 0.95rem;
+  }
+
+  ._bs2 .video-link A span,
+  ._bs2 .info-link A span{
+    font-size: 0.9rem;
+  }
+
+}
