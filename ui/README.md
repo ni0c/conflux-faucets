@@ -1,5 +1,7 @@
 # Faucets UI for Conflux Core Space and Conflux eSpace
 
+<img width="1792" alt="banner" src="https://conflux-faucets.com/cfx_faucets.jpg">
+
 This is the UI for Conflux Faucets in both Core Space and eSpace.
 
 ## Bootstrap
