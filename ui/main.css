@@ -6,16 +6,6 @@ body._bs2 {
   background-size: cover;
 }
 
-.left-icon {
-  width: 50px;
-}
-
-.footer-item {
-  display: inline-block;
-  width: 160px;
-}
-
-
 ._bs2 #videoEl {
   position: fixed;
   width: 100vw;
@@ -35,10 +25,14 @@ body._bs2 {
 ._bs2 #header-container {
   text-align: center;
   margin-top: 2rem;
+  color: rgba(255,255,255,0.92);
 }
 
 ._bs2 #top-bar-container {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.75);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.75) 80%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.75) 80%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.75) 80%);
   overflow: hidden;
   max-width: 100%;
 }
@@ -58,11 +52,11 @@ body._bs2 {
 ._bs2 #webomatic {
  
   color: rgba(250, 250, 250, 0.8);
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   font-size: 1rem;
   text-align: left;
-  margin-bottom: 0.75rem;
-  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   font-family: Comfortaa;
 
   position: relative;
@@ -327,7 +321,7 @@ body._bs2 {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-
+  font-size: 1.15rem;
 }
 
 ._bs2 #capt {
@@ -536,22 +530,32 @@ body._bs2 {
 
 ._bs2 #popup4 h2 {
   color: rgb(75, 183, 255);
+  color: #eee;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
 ._bs2 #popup4 h3,
 ._bs2 #popup4 h4 {
   color: yellow;
+  color: #eee;
   margin-bottom: 1.25rem;
+  margin-top: 1rem;
 }
 
 ._bs2 #popup4 h5,
 ._bs2 #popup4 h6 {
   color: rgb(247, 0, 255);
+  color: #ccc;
+}
+
+._bs2 .info-faqs {
+  margin-bottom: 2rem;
 }
 
 ._bs2 .info-faqs u {
   color: rgb(230, 227, 103);
+  color: #eee;
   font-weight: normal;
   text-decoration: none;
   font-weight: bold;
@@ -559,6 +563,7 @@ body._bs2 {
 
 ._bs2 .info-faqs b {
   color: limegreen;
+  color: rgb(122, 197, 122);
   font-weight: normal;
 }
 
@@ -617,6 +622,9 @@ body._bs2 {
   opacity: 0.3;
 }
 
+._bs2 #info-heading {
+  letter-spacing: 0.25rem;
+}
 
 @media only screen and (max-width: 840px) {
 
@@ -776,8 +784,8 @@ body._bs2 {
 
   ._bs2 #webomatic {
     font-size: 0.75rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
   }
   
   ._bs2 #webomatic #w_webo {
@@ -853,6 +861,8 @@ body._bs2 {
     margin-bottom: 1.5rem;
   }
   
+
+
   ._bs2 .conflux-mini {
     height: 0.6rem;
     margin-right: 0.1rem;
