@@ -3,9 +3,9 @@
 /* eslint-disable node/no-unpublished-require */
 /* eslint-disable prettier/prettier */
 
-const {ethers} = require('ethers');
-const {Conflux, Drip, format} = require('js-conflux-sdk');
-const {program} = require("commander");
+const { ethers } = require('ethers');
+const { Conflux, Drip, format } = require('js-conflux-sdk');
+const { program } = require("commander");
 
 require('dotenv').config();
 
@@ -19,14 +19,14 @@ let dbgArr = [];
 const startDate = new Date().toString();
 const startTime = Date.now();
 
-let conflux, 
-account, 
-balance, 
-status,
-receipt,
-wallet,
-provider,
-txHash = null;
+let conflux,
+  account,
+  balance,
+  status,
+  receipt,
+  wallet,
+  provider,
+  txHash = null;
 
 
 // Functions
@@ -41,13 +41,13 @@ function dbgLog(...str) {
 }
 
 const dbgLogger = {
-  log: function(...str) {
+  log: function (...str) {
     dbgLog(...str);
   },
-  info: function(...str) {
+  info: function (...str) {
     dbgLog(...str);
   },
-  error: function(...str) {
+  error: function (...str) {
     dbgLog(...str);
   }
 }
@@ -70,7 +70,7 @@ program.option('-d, --debug', 'Turn debug on');
 program
   .command('core send [address]')
   .action(async (_type, address) => {
- 
+
     const receiver = address;
 
     try {
@@ -88,12 +88,11 @@ program
         logger: dbgLogger,
       });
 
-      dbgLog({"providerOk": !!conflux});
-           
+      dbgLog({ "providerOk": !!conflux });
+
       if (process.env.CORE_PRIVATE_KEY) {
         account = conflux.wallet.addPrivateKey(process.env.CORE_PRIVATE_KEY);
-      } else
-      {
+      } else {
         strOut({
           'start': startDate,
           'success': false,
@@ -102,21 +101,20 @@ program
         });
         return;
       }
-    
-      dbgLog({"accountOk": !!account});
+
+      dbgLog({ "accountOk": !!account });
 
       const _balance = await conflux.getBalance(account.address);
       balance = Drip(_balance).toCFX();
 
-      let _balanceOk = !(!balance || balance < (coreCfxAmount*5));
+      let _balanceOk = !(!balance || balance < (coreCfxAmount * 5));
 
-      dbgLog({"balanceOk": _balanceOk});
+      dbgLog({ "balanceOk": _balanceOk });
 
-      if (!_balanceOk)
-      {
+      if (!_balanceOk) {
         // abort
         strOut({
-	        'start': startDate,
+          'start': startDate,
           'success': false,
           'runtime': runtime(),
           'network': 'core',
@@ -131,21 +129,21 @@ program
 
       const _tx = {
         from: account.address,
-        to: receiver, 
-        value: Drip.fromCFX(coreCfxAmount), 
+        to: receiver,
+        value: Drip.fromCFX(coreCfxAmount),
         gasPrice: coreGasPrice,
       };
-      dbgLog({"tx": _tx});
+      dbgLog({ "tx": _tx });
 
       txHash = await conflux.cfx.sendTransaction(_tx);
-    
-      dbgLog({"hash": txHash});
+
+      dbgLog({ "hash": txHash });
 
       receipt = await conflux.cfx.getTransactionReceipt(txHash);
-      dbgLog({"receipt": receipt});
+      dbgLog({ "receipt": receipt });
 
       status = (receipt === null);
-      
+
       strOut({
         'start': startDate,
         'success': status,
@@ -170,7 +168,7 @@ program
       });
     }
 
-});
+  });
 
 program
   .command('espace send [address]')
@@ -189,14 +187,14 @@ program
 
       provider = new ethers.providers.JsonRpcProvider(process.env.ESPACE_RPC_URL);
 
-      dbgLog({"providerOk": !!provider});
+      dbgLog({ "providerOk": !!provider });
 
       try {
         ethers.utils.getAddress(receiver);
       } catch (e) {
-        dbgLog({"addressOk": false});
+        dbgLog({ "addressOk": false });
         strOut({
-	        'start': startDate,
+          'start': startDate,
           'success': false,
           'runtime': runtime(),
           'network': 'espace',
@@ -208,15 +206,13 @@ program
           'debug': dbgArr,
         });
         return;
-      }   
+      }
 
-      dbgLog({"addressOk": true});
+      dbgLog({ "addressOk": true });
 
-      if (process.env.ESPACE_PRIVATE_KEY)
-      {
+      if (process.env.ESPACE_PRIVATE_KEY) {
         wallet = new ethers.Wallet(process.env.ESPACE_PRIVATE_KEY, provider);
-      } else
-      {
+      } else {
         strOut({
           'start': startDate,
           'success': false,
@@ -225,20 +221,19 @@ program
         });
         return;
       }
-      
-      dbgLog({"walletOk": !!wallet});
+
+      dbgLog({ "walletOk": !!wallet });
 
       const _balance = await provider.getBalance(wallet.address)
       balance = ethers.utils.formatEther(_balance);
 
-      const _balanceOk = !(!balance || (balance < (espaceCfxAmount*5)));
-      dbgLog({"balanceOk": _balanceOk});
+      const _balanceOk = !(!balance || (balance < (espaceCfxAmount * 5)));
+      dbgLog({ "balanceOk": _balanceOk });
 
-      if (!_balanceOk)
-      {
+      if (!_balanceOk) {
         // abort
         strOut({
-	        'start': startDate,
+          'start': startDate,
           'success': false,
           'runtime': runtime(),
           'network': 'espace',
@@ -252,13 +247,13 @@ program
       }
 
       const gasprice = await provider.getGasPrice();
-      dbgLog({"gasPrice": gasprice});
+      dbgLog({ "gasPrice": gasprice });
 
       const nonce = await provider.getTransactionCount(wallet.address, 'latest');
-      dbgLog({"nonce": nonce});
+      dbgLog({ "nonce": nonce });
 
       const gaslimit = ethers.utils.hexlify(21000);
-      dbgLog({"gasLimit": gaslimit});
+      dbgLog({ "gasLimit": gaslimit });
 
       const _ttx = {
         from: wallet.address,
@@ -268,21 +263,20 @@ program
         gasLimit: gaslimit,
         nonce: nonce,
       };
-      dbgLog({"tx": _ttx});
+      dbgLog({ "tx": _ttx });
 
       const tx = await wallet.sendTransaction(_ttx);
 
       const txHash = tx.hash;
-      dbgLog({"hash": txHash});
+      dbgLog({ "hash": txHash });
 
       const receipt = await provider.getTransactionReceipt(txHash);
-      dbgLog({"receipt": receipt});
+      dbgLog({ "receipt": receipt });
       const status = (receipt === null);
-      
-      if (status)
-      {
+
+      if (status) {
         strOut({
-	        'start': startDate,
+          'start': startDate,
           'success': status,
           'runtime': runtime(),
           'network': 'espace',
@@ -291,10 +285,9 @@ program
           'hash': txHash,
           'balance': balance,
         });
-      } else
-      {
+      } else {
         strOut({
-	        'start': startDate,
+          'start': startDate,
           'success': status,
           'runtime': runtime(),
           'network': 'espace',
@@ -304,8 +297,8 @@ program
           'debug': dbgArr,
         });
       }
-      
-    
+
+
     } catch (e) {
       // fail
       strOut({
@@ -321,6 +314,6 @@ program
       return;
     }
 
-});
+  });
 
 program.parse(process.argv);

@@ -4,6 +4,7 @@
   "description": "Conflux Faucets Transaction Backend for Conflux Core Space and eSpace",
   "main": "index.js",
   "bin": "./bin/tx_maker.js",
+  "private": true,
   "dependencies": {
     "commander": "^8.3.0",
     "debug": "^4.3.4",

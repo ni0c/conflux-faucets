@@ -230,40 +230,6 @@ body._bs2 {
 ._bs2 .faucet-button-text:active {
   transition: all 0.02s ease-in-out;
 }
-/*
-  background: -moz-linear-gradient(180deg, #0FAF00 0%, #0a7700 59%);
-  background: -webkit-linear-gradient(180deg, #0FAF00 0%, #0a7700 59%);
-  background: linear-gradient(180deg, #0FAF00 0%, #0a7700 59%);
-*/
-
-/*
-  ._bs2 .faucet-button-text {
-    background: #0FAF00;
-    
-    color: #fff;
-    border-radius: 1rem;
-    padding: 3rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    font-size: 1.85rem;
-    transition: all 0.15s ease-in-out;
-    font-family: Comfortaa;
-    box-shadow: rgba(0, 0, 0, 0.30) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.25) 0px 15px 25px 0px inset,
-    rgba(0, 0, 0, 0.25) 0px -36px 30px 0px inset, 
-    rgba(0, 0, 0, 0.18) 0px -79px 40px 0px inset;
-    
-  }
-
-  ._bs2 .faucet-button-text:hover,
-  ._bs2 .faucet-button-text:active {
-    background-color: #0c8f00;
-    
-    color: #fff;
-    transition: all 0.15s ease-in-out;
-  }
-*/
-
 
 ._bs2 #fluent-button.faucet-button {
   margin-right: 20px;
