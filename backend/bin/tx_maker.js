@@ -13,10 +13,6 @@ let coreCfxAmount = 0.0025;
 if (process.env.CORE_CFX_AMOUNT) {
   coreCfxAmount = process.env.CORE_CFX_AMOUNT;
 } 
-let coreGasPrice = 5000;
-if (process.env.CORE_GAS_PRICE) {
-  coreGasPrice = process.env.CORE_GAS_PRICE;
-}
 let espaceCfxAmount = '0.0025';
 if (process.env.ESPACE_CFX_AMOUNT) {
   espaceCfxAmount = String(process.env.ESPACE_CFX_AMOUNT);
@@ -135,6 +131,8 @@ program
         });
         return;
       }
+
+      const coreGasPrice = await conflux.getGasPrice();
 
       const _tx = {
         from: account.address,
